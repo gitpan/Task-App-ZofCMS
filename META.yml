@@ -1,0 +1,37 @@
+---
+name: Task-App-ZofCMS
+version: 0.0101
+author:
+  - 'Zoffix Znet <zoffix@cpan.org>'
+abstract: bundle of ZofCMS core and all of its plugins
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  App::ZofCMS: 0.0105
+  App::ZofCMS::Plugin::BreadCrumbs: 0.0101
+  App::ZofCMS::Plugin::Comments: 0.0101
+  App::ZofCMS::Plugin::Cookies: 0.0102
+  App::ZofCMS::Plugin::DBI: 0.0102
+  App::ZofCMS::Plugin::FileUpload: 0.0101
+  App::ZofCMS::Plugin::LinksToSpecs::CSS: 0.0101
+  App::ZofCMS::Plugin::LinksToSpecs::HTML: 0.0101
+  App::ZofCMS::Plugin::NavMaker: 0.0101
+  App::ZofCMS::Plugin::QueryToTemplate: 0.0102
+  App::ZofCMS::Plugin::QuickNote: 0.0105
+  App::ZofCMS::Plugin::Syntax::Highlight::CSS: 0.0102
+  App::ZofCMS::Plugin::Syntax::Highlight::HTML: 0.0101
+  App::ZofCMS::Plugin::TOC: 0.0103
+  App::ZofCMS::Plugin::Tagged: 0.0252
+  App::ZofCMS::Plugin::UserLogin: 0.0101
+  App::ZofCMS::Test::Plugin: 0.0104
+build_requires:
+  Test::More: 0
+provides:
+  Task::App::ZofCMS:
+    file: lib/Task/App/ZofCMS.pm
+    version: 0.0101
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
