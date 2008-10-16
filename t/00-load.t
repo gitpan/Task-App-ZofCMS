@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use Test::More tests => 17;
+use Test::More tests => 20;
 
 BEGIN {
     use_ok('App::ZofCMS');
@@ -19,6 +19,9 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::Tagged');
     use_ok('App::ZofCMS::Plugin::TOC');
     use_ok('App::ZofCMS::Plugin::UserLogin');
+    use_ok('App::ZofCMS::Plugin::Doctypes');
+    use_ok('App::ZofCMS::Plugin::FormToDatabase');
+    use_ok('App::ZofCMS::Plugin::AntiSpamMailTo');
 	use_ok( 'Task::App::ZofCMS' );
 }
 

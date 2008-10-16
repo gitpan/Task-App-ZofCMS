@@ -13,9 +13,11 @@ WriteMakefile
                            'App::ZofCMS::Plugin::LinksToSpecs::CSS' => '0.0101',
                            'App::ZofCMS::Plugin::Comments' => '0.0101',
                            'App::ZofCMS::Plugin::QuickNote' => '0.0105',
+                           'App::ZofCMS::Plugin::FormToDatabase' => '0.0101',
                            'App::ZofCMS::Plugin::DBI' => '0.0102',
                            'App::ZofCMS::Plugin::UserLogin' => '0.0101',
                            'App::ZofCMS::Plugin::Tagged' => '0.0252',
+                           'App::ZofCMS::Plugin::AntiSpamMailTo' => '0.0101',
                            'App::ZofCMS::Plugin::TOC' => '0.0103',
                            'App::ZofCMS::Plugin::FileUpload' => '0.0101',
                            'App::ZofCMS::Plugin::Syntax::Highlight::CSS' => '0.0102',
@@ -25,7 +27,8 @@ WriteMakefile
                            'App::ZofCMS' => '0.0105',
                            'App::ZofCMS::Plugin::LinksToSpecs::HTML' => '0.0101',
                            'App::ZofCMS::Test::Plugin' => '0.0104',
-                           'App::ZofCMS::Plugin::NavMaker' => '0.0101'
+                           'App::ZofCMS::Plugin::NavMaker' => '0.0101',
+                           'App::ZofCMS::Plugin::Doctypes' => '0.0101'
                          }
         )
 ;

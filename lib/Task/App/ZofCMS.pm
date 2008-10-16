@@ -3,7 +3,7 @@ package Task::App::ZofCMS;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 
 
 1;
@@ -84,6 +84,18 @@ Table of Contents building plugin.
 =item App::ZofCMS::Plugin::UserLogin
 
 Restrict access to pages based on user accounts
+
+=item App::ZofCMS::Plugin::Doctypes
+
+include DOCTYPEs in your pages without remembering how to spell them
+
+=item App::ZofCMS::Plugin::FormToDatabase
+
+simple insertion of query into database
+
+=item App::ZofCMS::Plugin::AntiSpamMailTo
+
+"smart" HTML escapes to protect mailto:foo@bar.com links from not-so-smart spam bots
 
 =back
 

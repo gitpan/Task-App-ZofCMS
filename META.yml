@@ -1,6 +1,6 @@
 ---
 name: Task-App-ZofCMS
-version: 0.0101
+version: 0.0102
 author:
   - 'Zoffix Znet <zoffix@cpan.org>'
 abstract: bundle of ZofCMS core and all of its plugins
@@ -9,11 +9,14 @@ resources:
   license: http://dev.perl.org/licenses/
 requires:
   App::ZofCMS: 0.0105
+  App::ZofCMS::Plugin::AntiSpamMailTo: 0.0101
   App::ZofCMS::Plugin::BreadCrumbs: 0.0101
   App::ZofCMS::Plugin::Comments: 0.0101
   App::ZofCMS::Plugin::Cookies: 0.0102
   App::ZofCMS::Plugin::DBI: 0.0102
+  App::ZofCMS::Plugin::Doctypes: 0.0101
   App::ZofCMS::Plugin::FileUpload: 0.0101
+  App::ZofCMS::Plugin::FormToDatabase: 0.0101
   App::ZofCMS::Plugin::LinksToSpecs::CSS: 0.0101
   App::ZofCMS::Plugin::LinksToSpecs::HTML: 0.0101
   App::ZofCMS::Plugin::NavMaker: 0.0101
@@ -30,7 +33,7 @@ build_requires:
 provides:
   Task::App::ZofCMS:
     file: lib/Task/App/ZofCMS.pm
-    version: 0.0101
+    version: 0.0102
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

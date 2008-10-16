@@ -28,6 +28,10 @@ my $builder = Module::Build->new(
         'App::ZofCMS::Plugin::Tagged'                  => 0.0252,
         'App::ZofCMS::Plugin::TOC'                     => 0.0103,
         'App::ZofCMS::Plugin::UserLogin'               => 0.0101,
+        'App::ZofCMS::Plugin::Doctypes'       => 0.0101,
+        'App::ZofCMS::Plugin::FormToDatabase' => 0.0101,
+        'App::ZofCMS::Plugin::AntiSpamMailTo' => 0.0101,
+
     },
     add_to_cleanup      => [ 'Task-App-ZofCMS-*' ],
     create_makefile_pl => 'traditional',
