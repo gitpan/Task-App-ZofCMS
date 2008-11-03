@@ -3,7 +3,7 @@ package Task::App::ZofCMS;
 use warnings;
 use strict;
 
-our $VERSION = '0.0102';
+our $VERSION = '0.0103';
 
 
 1;
@@ -17,85 +17,125 @@ Task::App::ZofCMS - bundle of ZofCMS core and all of its plugins
 
 =over 20
 
-=item App::ZofCMS
+=item App::ZofCMS (version 0.0106)
 
 ZofCMS core
 
-=item App::ZofCMS::Test::Plugin
+=item App::ZofCMS::Test::Plugin (version 0.0104)
 
-Test module for testing ZofCMS plugin
+Test module for testing ZofCMS plugins
 
-=item App::ZofCMS::Plugin::BreadCrumbs
+=item App::ZofCMS::Plugin::AntiSpamMailTo (version 0.0101)
 
-Add "breadcrumbs" navigation to your sites.
+"smart" HTML escapes to protect mailto:foo@bar.com links from not-so-smart spam bots 
 
-=item App::ZofCMS::Plugin::Comments
+=item App::ZofCMS::Plugin::AutoIMGSize (version 0.0101)
 
-Drop-in visitor comments support.
+automatically get image sizes and generate appropriate <img> tags 
 
-=item App::ZofCMS::Plugin::Cookies
+=item App::ZofCMS::Plugin::Base (version 0.0102)
 
-HTTP Cookie handling plugin.
+base class for App::ZofCMS plugins 
 
-=item App::ZofCMS::Plugin::DBI
+=item App::ZofCMS::Plugin::BreadCrumbs (version 0.0102)
 
-DBI access from ZofCMS templates.
+add "breadcrumbs" navigation to your sites 
 
-=item App::ZofCMS::Plugin::FileUpload
+=item App::ZofCMS::Plugin::Comments (version 0.0101)
 
-Plugin to handle file uploads.
+drop-in visitor comments support. 
 
-=item App::ZofCMS::Plugin::LinksToSpecs::CSS
+=item App::ZofCMS::Plugin::ConditionalRedirect (version 0.0101)
 
-Easily include links to properties in CSS2.1 specification.
+redirect users based on conditions 
 
-=item App::ZofCMS::Plugin::LinksToSpecs::HTML
+=item App::ZofCMS::Plugin::Cookies (version 0.0103)
 
-Easily include links to elements in HTML 4.01 specification.
+HTTP Cookie handling plugin for ZofCMS 
 
-=item App::ZofCMS::Plugin::NavMaker
+=item App::ZofCMS::Plugin::DBI (version 0.0202)
 
-Plugin for making navigation bars.
+DBI access from ZofCMS templates 
 
-=item App::ZofCMS::Plugin::QueryToTemplate
+=item App::ZofCMS::Plugin::Debug::Dumper (version 0.0101)
 
-Plugin to automagically make query parameters available in the template.
+small debugging plugin that Data::Dumper::Dumper()s interesting portions into {t} 
 
-=item App::ZofCMS::Plugin::QuickNote
+=item App::ZofCMS::Plugin::DirTreeBrowse (version 0.0101)
 
-Drop-in "quicknote" form to email messages from your site.
+plugin to display browseable directory tree 
 
-=item App::ZofCMS::Plugin::Syntax::Highlight::CSS
+=item App::ZofCMS::Plugin::Doctypes (version 0.0101)
 
-Provide syntax highlighted CSS code snippets on your site.
+include DOCTYPEs in your pages without remembering how to spell them 
 
-=item App::ZofCMS::Plugin::Syntax::Highlight::HTML
+=item App::ZofCMS::Plugin::FileList (version 0.0101)
 
-Provide HTML code snippets on your site.
+ZofCMS plugin to display lists of files 
 
-=item App::ZofCMS::Plugin::Tagged
+=item App::ZofCMS::Plugin::FileToTemplate (version 0.0101)
 
-Plugin to fill templates with data from query, template variables and configuration using <TAGS>
+read or do() files into ZofCMS Templates 
 
-=item App::ZofCMS::Plugin::TOC
+=item App::ZofCMS::Plugin::FileUpload (version 0.0101)
 
-Table of Contents building plugin.
+ZofCMS plugin to handle file uploads 
 
-=item App::ZofCMS::Plugin::UserLogin
+=item App::ZofCMS::Plugin::FormChecker (version 0.0301)
 
-Restrict access to pages based on user accounts
+plugin to check HTML form data. 
 
-=item App::ZofCMS::Plugin::Doctypes
+=item App::ZofCMS::Plugin::FormFiller (version 0.0101)
 
-include DOCTYPEs in your pages without remembering how to spell them
+fill HTML form elements' values. 
 
-=item App::ZofCMS::Plugin::FormToDatabase
+=item App::ZofCMS::Plugin::FormToDatabase (version 0.0101)
 
-simple insertion of query into database
+simple insertion of query into database 
 
-=item App::ZofCMS::Plugin::AntiSpamMailTo
+=item App::ZofCMS::Plugin::LinksToSpecs::CSS (version 0.0101)
 
-"smart" HTML escapes to protect mailto:foo@bar.com links from not-so-smart spam bots
+easily include links to properties in CSS2.1 specification 
+
+=item App::ZofCMS::Plugin::LinksToSpecs::HTML (version 0.0101)
+
+easily include links to elements in HTML 4.01 specification 
+
+=item App::ZofCMS::Plugin::NavMaker (version 0.0102)
+
+ZofCMS plugin for making navigation bars 
+
+=item App::ZofCMS::Plugin::QueryToTemplate (version 0.0102)
+
+ZofCMS plugin to automagically make query parameters available in the template 
+
+=item App::ZofCMS::Plugin::QuickNote (version 0.0105)
+
+drop-in "quicknote" form to email messages from your site 
+
+=item App::ZofCMS::Plugin::Syntax::Highlight::CSS (version 0.0102)
+
+provide syntax highlighted CSS code snippets on your site 
+
+=item App::ZofCMS::Plugin::Syntax::Highlight::HTML (version 0.0101)
+
+provide HTML code snippets on your site 
+
+=item App::ZofCMS::Plugin::TagCloud (version 0.0103)
+
+generate "tag clouds" 
+
+=item App::ZofCMS::Plugin::Tagged (version 0.0252)
+
+ZofCMS plugin to fill templates with data from query, template variables and configuration using <TAGS> 
+
+=item App::ZofCMS::Plugin::TOC (version 0.0103)
+
+Table of Contents building plugin for ZofCMS 
+
+=item App::ZofCMS::Plugin::UserLogin (version 0.0102)
+
+restrict access to pages based on user accounts 
 
 =back
 
