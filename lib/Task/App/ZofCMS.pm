@@ -3,7 +3,7 @@ package Task::App::ZofCMS;
 use warnings;
 use strict;
 
-our $VERSION = '0.0103';
+our $VERSION = '0.0104';
 
 
 1;
@@ -17,7 +17,7 @@ Task::App::ZofCMS - bundle of ZofCMS core and all of its plugins
 
 =over 20
 
-=item App::ZofCMS (version 0.0106)
+=item App::ZofCMS (version 0.0107)
 
 ZofCMS core
 
@@ -41,7 +41,7 @@ base class for App::ZofCMS plugins
 
 add "breadcrumbs" navigation to your sites 
 
-=item App::ZofCMS::Plugin::Comments (version 0.0101)
+=item App::ZofCMS::Plugin::Comments (version 0.0102)
 
 drop-in visitor comments support. 
 
@@ -61,7 +61,11 @@ DBI access from ZofCMS templates
 
 small debugging plugin that Data::Dumper::Dumper()s interesting portions into {t} 
 
-=item App::ZofCMS::Plugin::DirTreeBrowse (version 0.0101)
+=item App::ZofCMS::Plugin::Debug::Validator::HTML (version 0.0102)
+
+debugging plugin for auto validating HTML 
+
+=item App::ZofCMS::Plugin::DirTreeBrowse (version 0.0102)
 
 plugin to display browseable directory tree 
 
@@ -113,6 +117,10 @@ ZofCMS plugin to automagically make query parameters available in the template
 
 drop-in "quicknote" form to email messages from your site 
 
+=item App::ZofCMS::Plugin::StyleSwitcher (version 0.0101)
+
+CSS Style switcher plugin 
+
 =item App::ZofCMS::Plugin::Syntax::Highlight::CSS (version 0.0102)
 
 provide syntax highlighted CSS code snippets on your site 
@@ -136,6 +144,10 @@ Table of Contents building plugin for ZofCMS
 =item App::ZofCMS::Plugin::UserLogin (version 0.0102)
 
 restrict access to pages based on user accounts 
+
+=item App::ZofCMS::PluginReference (version 0.0102)
+
+docs for all plugins in one document for easy reference 
 
 =back
 
