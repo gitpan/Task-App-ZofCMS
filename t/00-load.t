@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use Test::More tests => 32;
+use Test::More tests => 35;
 
 BEGIN {
     use_ok('App::ZofCMS');
@@ -21,6 +21,7 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::FileUpload');
     use_ok('App::ZofCMS::Plugin::FormChecker');
     use_ok('App::ZofCMS::Plugin::FormFiller');
+    use_ok('App::ZofCMS::Plugin::FormMailer');
     use_ok('App::ZofCMS::Plugin::FormToDatabase');
     use_ok('App::ZofCMS::Plugin::LinksToSpecs::CSS');
     use_ok('App::ZofCMS::Plugin::LinksToSpecs::HTML');
@@ -28,12 +29,14 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::QueryToTemplate');
     use_ok('App::ZofCMS::Plugin::QuickNote');
     use_ok('App::ZofCMS::Plugin::StyleSwitcher');
+    use_ok('App::ZofCMS::Plugin::Sub');
     use_ok('App::ZofCMS::Plugin::Syntax::Highlight::CSS');
     use_ok('App::ZofCMS::Plugin::Syntax::Highlight::HTML');
     use_ok('App::ZofCMS::Plugin::TagCloud');
     use_ok('App::ZofCMS::Plugin::Tagged');
     use_ok('App::ZofCMS::Plugin::TOC');
     use_ok('App::ZofCMS::Plugin::UserLogin');
+    use_ok('App::ZofCMS::Plugin::ValidationLinks');
     use_ok('App::ZofCMS::PluginReference');
 }
 

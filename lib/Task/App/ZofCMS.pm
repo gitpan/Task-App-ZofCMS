@@ -3,7 +3,7 @@ package Task::App::ZofCMS;
 use warnings;
 use strict;
 
-our $VERSION = '0.0104';
+our $VERSION = '0.0105';
 
 
 1;
@@ -17,7 +17,7 @@ Task::App::ZofCMS - bundle of ZofCMS core and all of its plugins
 
 =over 20
 
-=item App::ZofCMS (version 0.0107)
+=item App::ZofCMS (version 0.0108)
 
 ZofCMS core
 
@@ -93,6 +93,10 @@ plugin to check HTML form data.
 
 fill HTML form elements' values. 
 
+=item App::ZofCMS::Plugin::FormMailer (version 0.0101)
+
+plugin for e-mailing forms 
+
 =item App::ZofCMS::Plugin::FormToDatabase (version 0.0101)
 
 simple insertion of query into database 
@@ -121,6 +125,10 @@ drop-in "quicknote" form to email messages from your site
 
 CSS Style switcher plugin 
 
+=item App::ZofCMS::Plugin::Sub (version 0.0101)
+
+plugin to execute a subroutine, i.e. sub with priority setting 
+
 =item App::ZofCMS::Plugin::Syntax::Highlight::CSS (version 0.0102)
 
 provide syntax highlighted CSS code snippets on your site 
@@ -144,6 +152,10 @@ Table of Contents building plugin for ZofCMS
 =item App::ZofCMS::Plugin::UserLogin (version 0.0102)
 
 restrict access to pages based on user accounts 
+
+=item App::ZofCMS::Plugin::ValidationLinks (version 0.0101)
+
+plugin for people with bad memory to include Valid HTML/Valid CSS links pointing to validators 
 
 =item App::ZofCMS::PluginReference (version 0.0102)
 
