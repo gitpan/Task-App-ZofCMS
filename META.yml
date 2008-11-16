@@ -1,6 +1,6 @@
 ---
 name: Task-App-ZofCMS
-version: 0.0105
+version: 0.0106
 author:
   - 'Zoffix Znet <zoffix@cpan.org>'
 abstract: bundle of ZofCMS core and all of its plugins
@@ -16,7 +16,7 @@ requires:
   App::ZofCMS::Plugin::Comments: 0.0102
   App::ZofCMS::Plugin::ConditionalRedirect: 0.0101
   App::ZofCMS::Plugin::Cookies: 0.0103
-  App::ZofCMS::Plugin::DBI: 0.0202
+  App::ZofCMS::Plugin::DBI: 0.0311
   App::ZofCMS::Plugin::Debug::Dumper: 0.0101
   App::ZofCMS::Plugin::Debug::Validator::HTML: 0.0102
   App::ZofCMS::Plugin::DirTreeBrowse: 0.0102
@@ -24,7 +24,7 @@ requires:
   App::ZofCMS::Plugin::FileList: 0.0101
   App::ZofCMS::Plugin::FileToTemplate: 0.0101
   App::ZofCMS::Plugin::FileUpload: 0.0101
-  App::ZofCMS::Plugin::FormChecker: 0.0301
+  App::ZofCMS::Plugin::FormChecker: 0.0312
   App::ZofCMS::Plugin::FormFiller: 0.0101
   App::ZofCMS::Plugin::FormMailer: 0.0101
   App::ZofCMS::Plugin::FormToDatabase: 0.0101
@@ -42,14 +42,14 @@ requires:
   App::ZofCMS::Plugin::Tagged: 0.0252
   App::ZofCMS::Plugin::UserLogin: 0.0102
   App::ZofCMS::Plugin::ValidationLinks: 0.0101
-  App::ZofCMS::PluginReference: 0.0102
+  App::ZofCMS::PluginReference: 0.0103
   App::ZofCMS::Test::Plugin: 0.0104
 build_requires:
   Test::More: 0
 provides:
   Task::App::ZofCMS:
     file: lib/Task/App/ZofCMS.pm
-    version: 0.0105
+    version: 0.0106
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

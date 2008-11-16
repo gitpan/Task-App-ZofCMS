@@ -38,6 +38,7 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::UserLogin');
     use_ok('App::ZofCMS::Plugin::ValidationLinks');
     use_ok('App::ZofCMS::PluginReference');
+
 }
 
 diag( "Testing Task::App::ZofCMS $Task::App::ZofCMS::VERSION, Perl $], $^X" );
