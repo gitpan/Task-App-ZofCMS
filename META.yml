@@ -1,6 +1,6 @@
 ---
 name: Task-App-ZofCMS
-version: 0.0106
+version: 0.0107
 author:
   - 'Zoffix Znet <zoffix@cpan.org>'
 abstract: bundle of ZofCMS core and all of its plugins
@@ -8,31 +8,38 @@ license: perl
 resources:
   license: http://dev.perl.org/licenses/
 requires:
-  App::ZofCMS: 0.0108
+  App::ZofCMS: 0.0111
   App::ZofCMS::Plugin::AntiSpamMailTo: 0.0101
   App::ZofCMS::Plugin::AutoIMGSize: 0.0101
   App::ZofCMS::Plugin::Base: 0.0102
+  App::ZofCMS::Plugin::BasicLWP: 0.0102
   App::ZofCMS::Plugin::BreadCrumbs: 0.0102
   App::ZofCMS::Plugin::Comments: 0.0102
   App::ZofCMS::Plugin::ConditionalRedirect: 0.0101
   App::ZofCMS::Plugin::Cookies: 0.0103
-  App::ZofCMS::Plugin::DBI: 0.0311
+  App::ZofCMS::Plugin::DBI: 0.0312
+  App::ZofCMS::Plugin::DateSelector: 0.0112
   App::ZofCMS::Plugin::Debug::Dumper: 0.0101
   App::ZofCMS::Plugin::Debug::Validator::HTML: 0.0102
   App::ZofCMS::Plugin::DirTreeBrowse: 0.0102
   App::ZofCMS::Plugin::Doctypes: 0.0101
   App::ZofCMS::Plugin::FileList: 0.0101
   App::ZofCMS::Plugin::FileToTemplate: 0.0101
-  App::ZofCMS::Plugin::FileUpload: 0.0101
-  App::ZofCMS::Plugin::FormChecker: 0.0312
+  App::ZofCMS::Plugin::FileUpload: 0.0111
+  App::ZofCMS::Plugin::FloodControl: 0.0101
+  App::ZofCMS::Plugin::FormChecker: 0.0331
   App::ZofCMS::Plugin::FormFiller: 0.0101
-  App::ZofCMS::Plugin::FormMailer: 0.0101
+  App::ZofCMS::Plugin::FormMailer: 0.0201
   App::ZofCMS::Plugin::FormToDatabase: 0.0101
+  App::ZofCMS::Plugin::HTMLFactory: 0.0101
+  App::ZofCMS::Plugin::HTMLFactory::Entry: 0.0101
+  App::ZofCMS::Plugin::ImageGallery: 0.0201
   App::ZofCMS::Plugin::LinksToSpecs::CSS: 0.0101
   App::ZofCMS::Plugin::LinksToSpecs::HTML: 0.0101
-  App::ZofCMS::Plugin::NavMaker: 0.0102
+  App::ZofCMS::Plugin::NavMaker: 0.0103
   App::ZofCMS::Plugin::QueryToTemplate: 0.0102
-  App::ZofCMS::Plugin::QuickNote: 0.0105
+  App::ZofCMS::Plugin::QuickNote: 0.0106
+  App::ZofCMS::Plugin::SplitPriceSelect: 0.0102
   App::ZofCMS::Plugin::StyleSwitcher: 0.0101
   App::ZofCMS::Plugin::Sub: 0.0101
   App::ZofCMS::Plugin::Syntax::Highlight::CSS: 0.0102
@@ -40,16 +47,17 @@ requires:
   App::ZofCMS::Plugin::TOC: 0.0103
   App::ZofCMS::Plugin::TagCloud: 0.0103
   App::ZofCMS::Plugin::Tagged: 0.0252
-  App::ZofCMS::Plugin::UserLogin: 0.0102
+  App::ZofCMS::Plugin::UserLogin: 0.0103
   App::ZofCMS::Plugin::ValidationLinks: 0.0101
-  App::ZofCMS::PluginReference: 0.0103
+  App::ZofCMS::Plugin::YouTube: 0.0103
+  App::ZofCMS::PluginReference: 0.0105
   App::ZofCMS::Test::Plugin: 0.0104
 build_requires:
   Test::More: 0
 provides:
   Task::App::ZofCMS:
     file: lib/Task/App/ZofCMS.pm
-    version: 0.0106
+    version: 0.0107
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

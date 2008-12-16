@@ -3,7 +3,7 @@ package Task::App::ZofCMS;
 use warnings;
 use strict;
 
-our $VERSION = '0.0106';
+our $VERSION = '0.0107';
 
 
 1;
@@ -17,7 +17,7 @@ Task::App::ZofCMS - bundle of ZofCMS core and all of its plugins
 
 =over 20
 
-=item App::ZofCMS (version 0.0108)
+=item App::ZofCMS (version 0.0111)
 
 ZofCMS core
 
@@ -27,139 +27,171 @@ Test module for testing ZofCMS plugins
 
 =item App::ZofCMS::Plugin::AntiSpamMailTo (version 0.0101)
 
-"smart" HTML escapes to protect mailto:foo@bar.com links from not-so-smart spam bots
+"smart" HTML escapes to protect mailto:foo@bar.com links from not-so-smart spam bots 
 
 =item App::ZofCMS::Plugin::AutoIMGSize (version 0.0101)
 
-automatically get image sizes and generate appropriate <img> tags
+automatically get image sizes and generate appropriate <img> tags 
 
 =item App::ZofCMS::Plugin::Base (version 0.0102)
 
-base class for App::ZofCMS plugins
+base class for App::ZofCMS plugins 
+
+=item App::ZofCMS::Plugin::BasicLWP (version 0.0102)
+
+very basic "uri-to-content" style LWP plugin for ZofCMS. 
 
 =item App::ZofCMS::Plugin::BreadCrumbs (version 0.0102)
 
-add "breadcrumbs" navigation to your sites
+add "breadcrumbs" navigation to your sites 
 
 =item App::ZofCMS::Plugin::Comments (version 0.0102)
 
-drop-in visitor comments support.
+drop-in visitor comments support. 
 
 =item App::ZofCMS::Plugin::ConditionalRedirect (version 0.0101)
 
-redirect users based on conditions
+redirect users based on conditions 
 
 =item App::ZofCMS::Plugin::Cookies (version 0.0103)
 
-HTTP Cookie handling plugin for ZofCMS
+HTTP Cookie handling plugin for ZofCMS 
 
-=item App::ZofCMS::Plugin::DBI (version 0.0311)
+=item App::ZofCMS::Plugin::DateSelector (version 0.0112)
 
-DBI access from ZofCMS templates
+plugin to generate and "parse" <select>s for date/time input 
+
+=item App::ZofCMS::Plugin::DBI (version 0.0312)
+
+DBI access from ZofCMS templates 
 
 =item App::ZofCMS::Plugin::Debug::Dumper (version 0.0101)
 
-small debugging plugin that Data::Dumper::Dumper()s interesting portions into {t}
+small debugging plugin that Data::Dumper::Dumper()s interesting portions into {t} 
 
 =item App::ZofCMS::Plugin::Debug::Validator::HTML (version 0.0102)
 
-debugging plugin for auto validating HTML
+debugging plugin for auto validating HTML 
 
 =item App::ZofCMS::Plugin::DirTreeBrowse (version 0.0102)
 
-plugin to display browseable directory tree
+plugin to display browseable directory tree 
 
 =item App::ZofCMS::Plugin::Doctypes (version 0.0101)
 
-include DOCTYPEs in your pages without remembering how to spell them
+include DOCTYPEs in your pages without remembering how to spell them 
 
 =item App::ZofCMS::Plugin::FileList (version 0.0101)
 
-ZofCMS plugin to display lists of files
+ZofCMS plugin to display lists of files 
 
 =item App::ZofCMS::Plugin::FileToTemplate (version 0.0101)
 
-read or do() files into ZofCMS Templates
+read or do() files into ZofCMS Templates 
 
-=item App::ZofCMS::Plugin::FileUpload (version 0.0101)
+=item App::ZofCMS::Plugin::FileUpload (version 0.0111)
 
-ZofCMS plugin to handle file uploads
+ZofCMS plugin to handle file uploads 
 
-=item App::ZofCMS::Plugin::FormChecker (version 0.0312)
+=item App::ZofCMS::Plugin::FloodControl (version 0.0101)
 
-plugin to check HTML form data.
+plugin for protecting forms and anything else from floods (abuse) 
+
+=item App::ZofCMS::Plugin::FormChecker (version 0.0331)
+
+plugin to check HTML form data. 
 
 =item App::ZofCMS::Plugin::FormFiller (version 0.0101)
 
-fill HTML form elements' values.
+fill HTML form elements' values. 
 
-=item App::ZofCMS::Plugin::FormMailer (version 0.0101)
+=item App::ZofCMS::Plugin::FormMailer (version 0.0201)
 
-plugin for e-mailing forms
+plugin for e-mailing forms 
 
 =item App::ZofCMS::Plugin::FormToDatabase (version 0.0101)
 
-simple insertion of query into database
+simple insertion of query into database 
+
+=item App::ZofCMS::Plugin::HTMLFactory (version 0.0101)
+
+notes for modules in App::ZofCMS::Plugin::HTMLFactory:: namespace 
+
+=item App::ZofCMS::Plugin::HTMLFactory::Entry (version 0.0101)
+
+plugin to wrap content in three divs used for styling boxes 
+
+=item App::ZofCMS::Plugin::ImageGallery (version 0.0201)
+
+CRUD-like plugin for managing images. 
 
 =item App::ZofCMS::Plugin::LinksToSpecs::CSS (version 0.0101)
 
-easily include links to properties in CSS2.1 specification
+easily include links to properties in CSS2.1 specification 
 
 =item App::ZofCMS::Plugin::LinksToSpecs::HTML (version 0.0101)
 
-easily include links to elements in HTML 4.01 specification
+easily include links to elements in HTML 4.01 specification 
 
-=item App::ZofCMS::Plugin::NavMaker (version 0.0102)
+=item App::ZofCMS::Plugin::NavMaker (version 0.0103)
 
-ZofCMS plugin for making navigation bars
+ZofCMS plugin for making navigation bars 
 
 =item App::ZofCMS::Plugin::QueryToTemplate (version 0.0102)
 
-ZofCMS plugin to automagically make query parameters available in the template
+ZofCMS plugin to automagically make query parameters available in the template 
 
-=item App::ZofCMS::Plugin::QuickNote (version 0.0105)
+=item App::ZofCMS::Plugin::QuickNote (version 0.0106)
 
-drop-in "quicknote" form to email messages from your site
+drop-in "quicknote" form to email messages from your site 
+
+=item App::ZofCMS::Plugin::SplitPriceSelect (version 0.0102)
+
+plugin for generating a <select> for "price range" out of arbitrary range of prices. 
 
 =item App::ZofCMS::Plugin::StyleSwitcher (version 0.0101)
 
-CSS Style switcher plugin
+CSS Style switcher plugin 
 
 =item App::ZofCMS::Plugin::Sub (version 0.0101)
 
-plugin to execute a subroutine, i.e. sub with priority setting
+plugin to execute a subroutine, i.e. sub with priority setting 
 
 =item App::ZofCMS::Plugin::Syntax::Highlight::CSS (version 0.0102)
 
-provide syntax highlighted CSS code snippets on your site
+provide syntax highlighted CSS code snippets on your site 
 
 =item App::ZofCMS::Plugin::Syntax::Highlight::HTML (version 0.0101)
 
-provide HTML code snippets on your site
+provide HTML code snippets on your site 
 
 =item App::ZofCMS::Plugin::TagCloud (version 0.0103)
 
-generate "tag clouds"
+generate "tag clouds" 
 
 =item App::ZofCMS::Plugin::Tagged (version 0.0252)
 
-ZofCMS plugin to fill templates with data from query, template variables and configuration using <TAGS>
+ZofCMS plugin to fill templates with data from query, template variables and configuration using <TAGS> 
 
 =item App::ZofCMS::Plugin::TOC (version 0.0103)
 
-Table of Contents building plugin for ZofCMS
+Table of Contents building plugin for ZofCMS 
 
-=item App::ZofCMS::Plugin::UserLogin (version 0.0102)
+=item App::ZofCMS::Plugin::UserLogin (version 0.0103)
 
-restrict access to pages based on user accounts
+restrict access to pages based on user accounts 
 
 =item App::ZofCMS::Plugin::ValidationLinks (version 0.0101)
 
-plugin for people with bad memory to include Valid HTML/Valid CSS links pointing to validators
+plugin for people with bad memory to include Valid HTML/Valid CSS links pointing to validators 
 
-=item App::ZofCMS::PluginReference (version 0.0103)
+=item App::ZofCMS::Plugin::YouTube (version 0.0103)
 
-docs for all plugins in one document for easy reference
+CRUD-type plugin to manage YouTube videos 
+
+=item App::ZofCMS::PluginReference (version 0.0105)
+
+docs for all plugins in one document for easy reference 
 
 =back
 
