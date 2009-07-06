@@ -3,7 +3,7 @@ package Task::App::ZofCMS;
 use warnings;
 use strict;
 
-our $VERSION = '0.0107';
+our $VERSION = '0.0108';
 
 
 1;
@@ -29,11 +29,11 @@ Test module for testing ZofCMS plugins
 
 "smart" HTML escapes to protect mailto:foo@bar.com links from not-so-smart spam bots 
 
-=item App::ZofCMS::Plugin::AutoIMGSize (version 0.0101)
+=item App::ZofCMS::Plugin::AutoIMGSize (version 0.0102)
 
 automatically get image sizes and generate appropriate <img> tags 
 
-=item App::ZofCMS::Plugin::Base (version 0.0102)
+=item App::ZofCMS::Plugin::Base (version 0.0103)
 
 base class for App::ZofCMS plugins 
 
@@ -47,11 +47,15 @@ add "breadcrumbs" navigation to your sites
 
 =item App::ZofCMS::Plugin::Comments (version 0.0102)
 
-drop-in visitor comments support. 
+drop-in visitor comments support.
 
 =item App::ZofCMS::Plugin::ConditionalRedirect (version 0.0101)
 
-redirect users based on conditions 
+redirect users based on
+
+=item App::ZofCMS::Plugin::ConfigToTemplate (version 0.0102)
+
+plugin to dynamically stuff Main Config File keys into ZofCMS Template 
 
 =item App::ZofCMS::Plugin::Cookies (version 0.0103)
 
@@ -61,21 +65,21 @@ HTTP Cookie handling plugin for ZofCMS
 
 plugin to generate and "parse" <select>s for date/time input 
 
-=item App::ZofCMS::Plugin::DBI (version 0.0312)
+=item App::ZofCMS::Plugin::DBI (version 0.0331)
 
 DBI access from ZofCMS templates 
 
 =item App::ZofCMS::Plugin::Debug::Dumper (version 0.0101)
 
-small debugging plugin that Data::Dumper::Dumper()s interesting portions into {t} 
+small debugging plugin that
 
 =item App::ZofCMS::Plugin::Debug::Validator::HTML (version 0.0102)
 
-debugging plugin for auto validating HTML 
+debugging plugin for auto
 
 =item App::ZofCMS::Plugin::DirTreeBrowse (version 0.0102)
 
-plugin to display browseable directory tree 
+plugin to display browseable
 
 =item App::ZofCMS::Plugin::Doctypes (version 0.0101)
 
@@ -83,13 +87,17 @@ include DOCTYPEs in your pages without remembering how to spell them
 
 =item App::ZofCMS::Plugin::FileList (version 0.0101)
 
-ZofCMS plugin to display lists of files 
+ZofCMS plugin to display lists of files
 
 =item App::ZofCMS::Plugin::FileToTemplate (version 0.0101)
 
-read or do() files into ZofCMS Templates 
+read or do() files into ZofCMS
 
-=item App::ZofCMS::Plugin::FileUpload (version 0.0111)
+=item App::ZofCMS::Plugin::FileTypeIcon (version )
+
+present users with pretty icons depending on file type 
+
+=item App::ZofCMS::Plugin::FileUpload (version 0.0112)
 
 ZofCMS plugin to handle file uploads 
 
@@ -97,13 +105,13 @@ ZofCMS plugin to handle file uploads
 
 plugin for protecting forms and anything else from floods (abuse) 
 
-=item App::ZofCMS::Plugin::FormChecker (version 0.0331)
+=item App::ZofCMS::Plugin::FormChecker (version 0.0341)
 
 plugin to check HTML form data. 
 
 =item App::ZofCMS::Plugin::FormFiller (version 0.0101)
 
-fill HTML form elements' values. 
+fill HTML form elements' values.
 
 =item App::ZofCMS::Plugin::FormMailer (version 0.0201)
 
@@ -113,7 +121,7 @@ plugin for e-mailing forms
 
 simple insertion of query into database 
 
-=item App::ZofCMS::Plugin::HTMLFactory (version 0.0101)
+=item App::ZofCMS::Plugin::HTMLFactory (version 0.0102)
 
 notes for modules in App::ZofCMS::Plugin::HTMLFactory:: namespace 
 
@@ -121,9 +129,17 @@ notes for modules in App::ZofCMS::Plugin::HTMLFactory:: namespace
 
 plugin to wrap content in three divs used for styling boxes 
 
-=item App::ZofCMS::Plugin::ImageGallery (version 0.0201)
+=item App::ZofCMS::Plugin::HTMLFactory::PageToBodyId (version 0.001)
+
+plugin to automatically create id="" attributes on <body> depending on the current page 
+
+=item App::ZofCMS::Plugin::ImageGallery (version 0.0202)
 
 CRUD-like plugin for managing images. 
+
+=item App::ZofCMS::Plugin::ImageResize (version 0.0102)
+
+Plugin to resize images 
 
 =item App::ZofCMS::Plugin::LinksToSpecs::CSS (version 0.0101)
 
@@ -145,17 +161,25 @@ ZofCMS plugin to automagically make query parameters available in the template
 
 drop-in "quicknote" form to email messages from your site 
 
+=item App::ZofCMS::Plugin::RandomPasswordGenerator (version )
+
+easily generate random passwords with an option to use md5_hex from Digest::MD5 on them 
+
+=item App::ZofCMS::Plugin::Search::Indexer (version 0.0102)
+
+plugin that incorporates Search::Indexer module's functionality 
+
 =item App::ZofCMS::Plugin::SplitPriceSelect (version 0.0102)
 
 plugin for generating a <select> for "price range" out of arbitrary range of prices. 
 
 =item App::ZofCMS::Plugin::StyleSwitcher (version 0.0101)
 
-CSS Style switcher plugin 
+CSS Style switcher plugin
 
 =item App::ZofCMS::Plugin::Sub (version 0.0101)
 
-plugin to execute a subroutine, i.e. sub with priority setting 
+plugin to execute a subroutine, i.e. sub with
 
 =item App::ZofCMS::Plugin::Syntax::Highlight::CSS (version 0.0102)
 
@@ -183,13 +207,13 @@ restrict access to pages based on user accounts
 
 =item App::ZofCMS::Plugin::ValidationLinks (version 0.0101)
 
-plugin for people with bad memory to include Valid HTML/Valid CSS links pointing to validators 
+plugin for people with bad memory
 
 =item App::ZofCMS::Plugin::YouTube (version 0.0103)
 
 CRUD-type plugin to manage YouTube videos 
 
-=item App::ZofCMS::PluginReference (version 0.0105)
+=item App::ZofCMS::PluginReference (version 0.0106)
 
 docs for all plugins in one document for easy reference 
 
