@@ -1,20 +1,28 @@
 #!/usr/bin/env perl
 
-use Test::More tests => 49;
+use Test::More tests => 72;
 
 BEGIN {
     use_ok('App::ZofCMS');
+    use_ok('App::ZofCMS::Plugin::AccessDenied');
     use_ok('App::ZofCMS::Plugin::AntiSpamMailTo');
+    use_ok('App::ZofCMS::Plugin::AutoDump');
+    use_ok('App::ZofCMS::Plugin::AutoEmptyQueryDelete');
     use_ok('App::ZofCMS::Plugin::AutoIMGSize');
+    use_ok('App::ZofCMS::Plugin::Barcode');
     use_ok('App::ZofCMS::Plugin::Base');
     use_ok('App::ZofCMS::Plugin::BasicLWP');
+    use_ok('App::ZofCMS::Plugin::BoolSettingsManager');
     use_ok('App::ZofCMS::Plugin::BreadCrumbs');
+    use_ok('App::ZofCMS::Plugin::Captcha');
     use_ok('App::ZofCMS::Plugin::Comments');
     use_ok('App::ZofCMS::Plugin::ConditionalRedirect');
     use_ok('App::ZofCMS::Plugin::ConfigToTemplate');
     use_ok('App::ZofCMS::Plugin::Cookies');
+    use_ok('App::ZofCMS::Plugin::CSSMinifier');
     use_ok('App::ZofCMS::Plugin::DateSelector');
     use_ok('App::ZofCMS::Plugin::DBI');
+    use_ok('App::ZofCMS::Plugin::DBIPPT');
     use_ok('App::ZofCMS::Plugin::Debug::Dumper');
     use_ok('App::ZofCMS::Plugin::Debug::Validator::HTML');
     use_ok('App::ZofCMS::Plugin::DirTreeBrowse');
@@ -28,18 +36,31 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::FormFiller');
     use_ok('App::ZofCMS::Plugin::FormMailer');
     use_ok('App::ZofCMS::Plugin::FormToDatabase');
+    use_ok('App::ZofCMS::Plugin::GetRemotePageTitle');
+    use_ok('App::ZofCMS::Plugin::GoogleCalculator');
+    use_ok('App::ZofCMS::Plugin::GooglePageRank');
+    use_ok('App::ZofCMS::Plugin::GoogleTime');
     use_ok('App::ZofCMS::Plugin::HTMLFactory');
     use_ok('App::ZofCMS::Plugin::HTMLFactory::Entry');
     use_ok('App::ZofCMS::Plugin::HTMLFactory::PageToBodyId');
+    use_ok('App::ZofCMS::Plugin::HTMLMailer');
     use_ok('App::ZofCMS::Plugin::ImageGallery');
     use_ok('App::ZofCMS::Plugin::ImageResize');
+    use_ok('App::ZofCMS::Plugin::InstalledModuleChecker');
+    use_ok('App::ZofCMS::Plugin::JavaScriptMinifier');
+    use_ok('App::ZofCMS::Plugin::LinkifyText');
     use_ok('App::ZofCMS::Plugin::LinksToSpecs::CSS');
     use_ok('App::ZofCMS::Plugin::LinksToSpecs::HTML');
     use_ok('App::ZofCMS::Plugin::NavMaker');
+    use_ok('App::ZofCMS::Plugin::PreferentialOrder');
     use_ok('App::ZofCMS::Plugin::QueryToTemplate');
     use_ok('App::ZofCMS::Plugin::QuickNote');
+    use_ok('App::ZofCMS::Plugin::RandomBashOrgQuote');
     use_ok('App::ZofCMS::Plugin::RandomPasswordGenerator');
+    use_ok('App::ZofCMS::Plugin::RandomPasswordGeneratorPurePerl');
     use_ok('App::ZofCMS::Plugin::Search::Indexer');
+    use_ok('App::ZofCMS::Plugin::SendFile');
+    use_ok('App::ZofCMS::Plugin::Session');
     use_ok('App::ZofCMS::Plugin::SplitPriceSelect');
     use_ok('App::ZofCMS::Plugin::StyleSwitcher');
     use_ok('App::ZofCMS::Plugin::Sub');
@@ -49,6 +70,8 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::Tagged');
     use_ok('App::ZofCMS::Plugin::TOC');
     use_ok('App::ZofCMS::Plugin::UserLogin');
+    use_ok('App::ZofCMS::Plugin::UserLogin::ChangePassword');
+    use_ok('App::ZofCMS::Plugin::UserLogin::ForgotPassword');
     use_ok('App::ZofCMS::Plugin::ValidationLinks');
     use_ok('App::ZofCMS::Plugin::YouTube');
     use_ok('App::ZofCMS::PluginReference');
