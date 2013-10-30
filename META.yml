@@ -5,8 +5,9 @@ author:
 build_requires:
   Test::More: 0
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3607'
+  Module::Build: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,18 +16,18 @@ name: Task-App-ZofCMS
 provides:
   Task::App::ZofCMS:
     file: lib/Task/App/ZofCMS.pm
-    version: 0.0109
+    version: 0.0110
 requires:
-  App::ZofCMS: 0.0221
+  App::ZofCMS: 0.0224
   App::ZofCMS::Plugin::AccessDenied: 0.0101
   App::ZofCMS::Plugin::AntiSpamMailTo: 0.0101
   App::ZofCMS::Plugin::AutoDump: 0.0101
   App::ZofCMS::Plugin::AutoEmptyQueryDelete: 0.0101
   App::ZofCMS::Plugin::AutoIMGSize: 0.0102
   App::ZofCMS::Plugin::Barcode: 0.0103
-  App::ZofCMS::Plugin::Base: 0.0106
+  App::ZofCMS::Plugin::Base: 0.0111
   App::ZofCMS::Plugin::BasicLWP: 0.0104
-  App::ZofCMS::Plugin::BoolSettingsManager: 0.0101
+  App::ZofCMS::Plugin::BoolSettingsManager: 0.0102
   App::ZofCMS::Plugin::BreadCrumbs: 0.0103
   App::ZofCMS::Plugin::CSSMinifier: 0.0104
   App::ZofCMS::Plugin::Captcha: 0.0102
@@ -34,13 +35,16 @@ requires:
   App::ZofCMS::Plugin::ConditionalRedirect: 0.0101
   App::ZofCMS::Plugin::ConfigToTemplate: 0.0104
   App::ZofCMS::Plugin::Cookies: 0.0104
+  App::ZofCMS::Plugin::CurrentPageURI: 0.0101
   App::ZofCMS::Plugin::DBI: 0.0402
   App::ZofCMS::Plugin::DBIPPT: 0.0104
+  App::ZofCMS::Plugin::DataToExcel: 0.0101
   App::ZofCMS::Plugin::DateSelector: 0.0112
   App::ZofCMS::Plugin::Debug::Dumper: 0.0102
   App::ZofCMS::Plugin::Debug::Validator::HTML: 0.0102
   App::ZofCMS::Plugin::DirTreeBrowse: 0.0105
   App::ZofCMS::Plugin::Doctypes: 0.0101
+  App::ZofCMS::Plugin::FeatureSuggestionBox: 0.0101
   App::ZofCMS::Plugin::FileList: 0.0101
   App::ZofCMS::Plugin::FileToTemplate: 0.0101
   App::ZofCMS::Plugin::FileTypeIcon: 0.0105
@@ -57,7 +61,7 @@ requires:
   App::ZofCMS::Plugin::HTMLFactory: 0.0102
   App::ZofCMS::Plugin::HTMLFactory::Entry: 0.0101
   App::ZofCMS::Plugin::HTMLFactory::PageToBodyId: 0.0102
-  App::ZofCMS::Plugin::HTMLMailer: 0.0102
+  App::ZofCMS::Plugin::HTMLMailer: 0.0104
   App::ZofCMS::Plugin::ImageGallery: 0.0203
   App::ZofCMS::Plugin::ImageResize: 0.0103
   App::ZofCMS::Plugin::InstalledModuleChecker: 0.0102
@@ -66,7 +70,7 @@ requires:
   App::ZofCMS::Plugin::LinksToSpecs::CSS: 0.0104
   App::ZofCMS::Plugin::LinksToSpecs::HTML: 0.0101
   App::ZofCMS::Plugin::NavMaker: 0.0103
-  App::ZofCMS::Plugin::PreferentialOrder: 0.0102
+  App::ZofCMS::Plugin::PreferentialOrder: 0.0103
   App::ZofCMS::Plugin::QueryToTemplate: 0.0102
   App::ZofCMS::Plugin::QuickNote: 0.0107
   App::ZofCMS::Plugin::RandomBashOrgQuote: 0.0102
@@ -76,6 +80,7 @@ requires:
   App::ZofCMS::Plugin::SendFile: 0.0103
   App::ZofCMS::Plugin::Session: 0.0102
   App::ZofCMS::Plugin::SplitPriceSelect: 0.0103
+  App::ZofCMS::Plugin::StartPage: 0.0102
   App::ZofCMS::Plugin::StyleSwitcher: 0.0102
   App::ZofCMS::Plugin::Sub: 0.0101
   App::ZofCMS::Plugin::Syntax::Highlight::CSS: 0.0102
@@ -83,13 +88,14 @@ requires:
   App::ZofCMS::Plugin::TOC: 0.0103
   App::ZofCMS::Plugin::TagCloud: 0.0103
   App::ZofCMS::Plugin::Tagged: 0.0252
-  App::ZofCMS::Plugin::UserLogin: 0.0212
+  App::ZofCMS::Plugin::UserLogin: 0.0213
   App::ZofCMS::Plugin::UserLogin::ChangePassword: 0.0110
-  App::ZofCMS::Plugin::UserLogin::ForgotPassword: 0.0112
+  App::ZofCMS::Plugin::UserLogin::ForgotPassword: 0.0114
   App::ZofCMS::Plugin::ValidationLinks: 0.0101
   App::ZofCMS::Plugin::YouTube: 0.0104
-  App::ZofCMS::PluginReference: 0.0106
+  App::ZofCMS::PluginReference: 0.0107
   App::ZofCMS::Test::Plugin: 0.0104
+  perl: 5.006
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.0109
+version: 0.0110

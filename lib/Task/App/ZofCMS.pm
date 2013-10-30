@@ -3,23 +3,35 @@ package Task::App::ZofCMS;
 use warnings;
 use strict;
 
-our $VERSION = '0.0109';
+our $VERSION = '0.0110';
 
 
 1;
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
 Task::App::ZofCMS - bundle of ZofCMS core and all of its plugins to date
 
+=head1 PRIOR TO INSTALL NOTES
+
+You'll need C<libgd> for Barcode plugin and C<libdb> for Search plugin.
+
+On my box (Bodhi Linux 2.4), this takes care of them:
+
+    sudo apt-get install libgd2-xpm-dev;
+    sudo apt-get install libdb-dev;
+
+Also, I found that I need to manually install L<Math::Pari> that is 
+used in password generating module. When it's being installed 
+automatically as a prerequisite, it seems the default is to NOT 
+download the stuff it needs to get.
+
 =head1 CONTENTS
 
 =over 20
-
-=item App::ZofCMS (version 0.0221)
-
-ZofCMS core
 
 =item App::ZofCMS::Test::Plugin (version 0.0104)
 
@@ -49,7 +61,7 @@ automatically get image sizes and generate appropriate
 
 plugin to generate various bar codes 
 
-=item App::ZofCMS::Plugin::Base (version 0.0106)
+=item App::ZofCMS::Plugin::Base (version 0.0111)
 
 base class for App::ZofCMS plugins
 
@@ -57,7 +69,7 @@ base class for App::ZofCMS plugins
 
 very basic "uri-to-content" style LWP plugin for ZofCMS. 
 
-=item App::ZofCMS::Plugin::BoolSettingsManager (version 0.0101)
+=item App::ZofCMS::Plugin::BoolSettingsManager (version 0.0102)
 
 Plugin to let individual users manage boolean settings
 
@@ -89,6 +101,14 @@ HTTP Cookie handling plugin for ZofCMS
 
 plugin for minifying CSS files 
 
+=item App::ZofCMS::Plugin::CurrentPageURI (version 0.0101)
+
+ZofCMS plugin to automatically add current page URI into templates
+
+=item App::ZofCMS::Plugin::DataToExcel (version 0.0101)
+
+ZofCMS plugin to output data as an Excel file
+
 =item App::ZofCMS::Plugin::DateSelector (version 0.0112)
 
 plugin to generate and "parse" 
@@ -116,6 +136,10 @@ plugin to display browseable directory tree
 =item App::ZofCMS::Plugin::Doctypes (version 0.0101)
 
 include DOCTYPEs in your pages without remembering how to spell them 
+
+=item App::ZofCMS::Plugin::FeatureSuggestionBox (version 0.0101)
+
+ZofCMS plugin that provides a feature suggestion box for your site
 
 =item App::ZofCMS::Plugin::FileList (version 0.0101)
 
@@ -181,7 +205,7 @@ plugin to wrap content in three divs used for styling boxes
 
 plugin to automatically create id="" attributes on 
 
-=item App::ZofCMS::Plugin::HTMLMailer (version 0.0102)
+=item App::ZofCMS::Plugin::HTMLMailer (version 0.0104)
 
 ZofCMS plugin for sending HTML email
 
@@ -217,7 +241,7 @@ easily include links to elements in HTML 4.01 specification
 
 ZofCMS plugin for making navigation bars 
 
-=item App::ZofCMS::Plugin::PreferentialOrder (version 0.0102)
+=item App::ZofCMS::Plugin::PreferentialOrder (version 0.0103)
 
 Display HTML snippets in user-controllable, savable order
 
@@ -239,7 +263,7 @@ easily generate random passwords with an option to use md5_hex from Digest::MD5 
 
 =item App::ZofCMS::Plugin::RandomPasswordGeneratorPurePerl (version 0.0103)
 
- 
+easily generate random passwords with an option to use md5_hex from Digest::MD5 on them | Pure perl solution
 
 =item App::ZofCMS::Plugin::Search::Indexer (version 0.0102)
 
@@ -256,6 +280,10 @@ plugin for storing data across requests
 =item App::ZofCMS::Plugin::SplitPriceSelect (version 0.0103)
 
 plugin for generating a 
+
+=item App::ZofCMS::Plugin::StartPage (version 0.0102)
+
+ZofCMS plugin that redirects the user to a page choosen by the user
 
 =item App::ZofCMS::Plugin::StyleSwitcher (version 0.0102)
 
@@ -285,7 +313,7 @@ ZofCMS plugin to fill templates with data from query, template variables and con
 
 Table of Contents building plugin for ZofCMS 
 
-=item App::ZofCMS::Plugin::UserLogin (version 0.0212)
+=item App::ZofCMS::Plugin::UserLogin (version 0.0213)
 
 restrict access to pages based on user accounts
 
@@ -293,7 +321,7 @@ restrict access to pages based on user accounts
 
 UserLogin plugin suppliment for changing user passwords
 
-=item App::ZofCMS::Plugin::UserLogin::ForgotPassword (version 0.0112)
+=item App::ZofCMS::Plugin::UserLogin::ForgotPassword (version 0.0114)
 
 addon plugin that adds functionality to let users reset passwords
 
@@ -305,9 +333,9 @@ plugin for people with bad memory
 
 CRUD-type plugin to manage YouTube videos 
 
-=item App::ZofCMS::PluginReference (version 0.0106)
+=item App::ZofCMS::PluginReference (version 0.0107)
 
-docs for all plugins in one document for easy reference 
+docs for all plugins in one document for easy reference
 
 =back
 

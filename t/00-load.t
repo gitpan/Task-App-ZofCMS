@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use Test::More tests => 72;
+use Test::More tests => 76;
 
 BEGIN {
     use_ok('App::ZofCMS');
@@ -20,6 +20,8 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::ConfigToTemplate');
     use_ok('App::ZofCMS::Plugin::Cookies');
     use_ok('App::ZofCMS::Plugin::CSSMinifier');
+    use_ok('App::ZofCMS::Plugin::CurrentPageURI');
+    use_ok('App::ZofCMS::Plugin::DataToExcel');
     use_ok('App::ZofCMS::Plugin::DateSelector');
     use_ok('App::ZofCMS::Plugin::DBI');
     use_ok('App::ZofCMS::Plugin::DBIPPT');
@@ -27,6 +29,7 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::Debug::Validator::HTML');
     use_ok('App::ZofCMS::Plugin::DirTreeBrowse');
     use_ok('App::ZofCMS::Plugin::Doctypes');
+    use_ok('App::ZofCMS::Plugin::FeatureSuggestionBox');
     use_ok('App::ZofCMS::Plugin::FileList');
     use_ok('App::ZofCMS::Plugin::FileToTemplate');
     use_ok('App::ZofCMS::Plugin::FileTypeIcon');
@@ -62,6 +65,7 @@ BEGIN {
     use_ok('App::ZofCMS::Plugin::SendFile');
     use_ok('App::ZofCMS::Plugin::Session');
     use_ok('App::ZofCMS::Plugin::SplitPriceSelect');
+    use_ok('App::ZofCMS::Plugin::StartPage');
     use_ok('App::ZofCMS::Plugin::StyleSwitcher');
     use_ok('App::ZofCMS::Plugin::Sub');
     use_ok('App::ZofCMS::Plugin::Syntax::Highlight::CSS');
